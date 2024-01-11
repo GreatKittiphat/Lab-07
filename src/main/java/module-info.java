@@ -8,4 +8,7 @@ module ku.cs.lab03 {
 
 	exports ku.cs.lab03.controllers;
 	opens ku.cs.lab03.controllers to javafx.fxml;
+
+	exports ku.cs.lab03.models;
+	opens ku.cs.lab03.models to javafx.base;
 }

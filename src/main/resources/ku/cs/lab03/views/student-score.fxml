@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.lab03.controllers.StudentScoreController">
+   <children>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleBackToStudentsTableButton" text="Back to Students Table" textFill="#0a89ea" />
+      <Label layoutX="68.0" layoutY="81.0" text="Student Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="68.0" layoutY="116.0" text="Student ID">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="68.0" layoutY="153.0" text="Score">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameLabel" layoutX="219.0" layoutY="81.0" text="{nameLabel}">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="idLabel" layoutX="217.0" layoutY="116.0" text="{idLabel}">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="scoreLabel" layoutX="220.0" layoutY="153.0" text="{scoreLabel}">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="68.0" layoutY="208.0" text="Give Score">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="313.0" layoutY="209.0" mnemonicParsing="false" onAction="#handleGiveScoreButton" text="Give" />
+      <TextField fx:id="scoreTextField" layoutX="153.0" layoutY="209.0" />
+      <Label fx:id="errorLabel" layoutX="153.0" layoutY="243.0" text="errorLabel" textFill="#ea0e0e" />
+   </children>
+</AnchorPane>

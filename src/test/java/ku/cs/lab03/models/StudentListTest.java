@@ -15,13 +15,13 @@ class StudentListTest {
 
     @BeforeEach
     void setupBeforeEach() {
-        Datasource<Student> datasource = new StudentHardCodeDatasource();
+        Datasource<StudentList> datasource = new StudentHardCodeDatasource();
         studentList = datasource.readData();
     }
 
     @Test
     void testAddOneStudent() {
-        int oldsize = studentList.getStudent().size();
+        int oldsize = studentList.getStudents().size();
         studentList.addNewStudent("123", "ABC");
         ArrayList<Student> stdArr = studentList.getStudents();
     }
